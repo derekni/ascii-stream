@@ -21,8 +21,7 @@ const convertToGrayScales = (context: any, width: number, height: number) => {
   return grayScales;
 };
 
-// const grayRamp = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,"^`\'. ';
-const grayRamp = ' .:-=+*#%@';
+const grayRamp = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,"^`\'. ';
 const rampLength = grayRamp.length;
 
 // the grayScale value is an integer ranging from 0 (black) to 255 (white)
