@@ -1,4 +1,4 @@
-import getAscii from 'pages/lib/getAscii';
+import getAscii from 'lib/getAscii';
 import { useEffect, useRef, useState } from 'react';
 
 type Props = {

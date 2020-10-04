@@ -1,6 +1,4 @@
-import dynamic from 'next/dynamic';
-
-const CreateCall = dynamic(import('components/CreateCall'), { ssr: false });
+import CreateCall from 'components/CreateCall';
 
 const CreateCallPage = () => {
   return <CreateCall />;

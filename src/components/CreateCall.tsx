@@ -1,5 +1,5 @@
 import { message } from 'antd';
-import getAscii from 'pages/lib/getAscii';
+import getAscii from 'lib/getAscii';
 import { useEffect, useRef, useState } from 'react';
 
 const CreateCall = () => {
