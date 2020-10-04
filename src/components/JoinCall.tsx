@@ -14,7 +14,7 @@ const JoinCall = ({ callId }: Props) => {
   useEffect(() => {
     import('peerjs').then((module) => {
       const Peer = module.default;
-      const peer = new Peer();
+      const peer = new Peer({ host: 'polar-escarpment-94286.herokuapp.com', port: 80 });
       peer.on('open', (id) => {
         console.log('my peer id:', id);
 
