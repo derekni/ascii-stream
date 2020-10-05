@@ -22,11 +22,12 @@ const convertToGrayScales = (context: any, width: number, height: number) => {
 };
 
 const grayRamp = '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,"^`\'. ';
+const reversedGrayRamp = ' .\'`^",:;Il!i><~+_-?][}{1)(|/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$';
 const rampLength = grayRamp.length;
 
 // the grayScale value is an integer ranging from 0 (black) to 255 (white)
 const getCharacterForGrayScale = (grayScale: number) =>
-  grayRamp[Math.ceil(((rampLength - 1) * grayScale) / 255)];
+  reversedGrayRamp[Math.ceil(((rampLength - 1) * grayScale) / 255)];
 
 const getAsciiFromGrayscales = (grayScales: number[], width: number) => {
   const ascii = grayScales.reduce((asciiImage, grayScale, index) => {
